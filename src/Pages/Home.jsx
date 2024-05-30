@@ -112,8 +112,35 @@ function Home() {
               View all 50+ countries
             </a>
           </div>
-          <div className="countriesList">
-            <div className="text-center">
+          <div className="countriesList d-flex text-center justify-content-evenly">
+            <div>
+              <img
+                src="https://cdn.britannica.com/82/2982-050-4A783E03/flag-prototype-Netherlands-countries-European-flags.jpg"
+                alt=""
+                width="200"
+                className="rounded"
+              />
+              <p>Name</p>
+            </div>
+            <div>
+              <img
+                src="https://cdn.britannica.com/82/2982-050-4A783E03/flag-prototype-Netherlands-countries-European-flags.jpg"
+                alt=""
+                width="200"
+                className="rounded"
+              />
+              <p>Name</p>
+            </div>
+            <div>
+              <img
+                src="https://cdn.britannica.com/82/2982-050-4A783E03/flag-prototype-Netherlands-countries-European-flags.jpg"
+                alt=""
+                width="200"
+                className="rounded"
+              />
+              <p>Name</p>
+            </div>
+            <div>
               <img
                 src="https://cdn.britannica.com/82/2982-050-4A783E03/flag-prototype-Netherlands-countries-European-flags.jpg"
                 alt=""
