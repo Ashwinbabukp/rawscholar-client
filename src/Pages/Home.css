@@ -1,0 +1,35 @@
+.hero {
+  background: linear-gradient(182.83deg, #eeaf48 -29%, #ee7d48 143.65%);
+}
+.cardtext {
+  font-size: 13px;
+}
+.cardheading {
+  font-size: 22px;
+}
+
+.card1{
+    position: relative;
+}
+
+.titleBar{
+    position: relative;
+    margin-block: 80px;
+}
+
+.titleTag{
+    color: #067bc2;
+    font-size:12px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.shape{
+    position: absolute;
+    left: 0;
+    background-color: #067bc2;
+    height: 30px;
+    width: 8px;
+    border-radius: 2px;
+}
+
