@@ -4,6 +4,7 @@ import illustration from '../assets/Illustration.png';
 import find2 from '../assets/find2.png';
 import passport2 from '../assets/passport2.png';
 import diploma2 from '../assets/diploma2.png';
+import university1 from '../assets/university1.png';
 import './Home.css';
 
 function Home() {
@@ -103,8 +104,8 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="services">
-        <div className="countriesContainer container">
+      <section className="services container">
+        <div className="countriesContainer ">
           <div className="titleBar d-flex">
             <div className="shape"></div>
             <h2 className="fs-4 ms-4">Major Countries</h2>
@@ -112,7 +113,7 @@ function Home() {
               View all 50+ countries
             </a>
           </div>
-          <div className="countriesList d-flex text-center justify-content-evenly">
+          <div className="countriesList d-flex text-center justify-content-between">
             <div>
               <img
                 src="https://cdn.britannica.com/82/2982-050-4A783E03/flag-prototype-Netherlands-countries-European-flags.jpg"
@@ -122,32 +123,75 @@ function Home() {
               />
               <p>Name</p>
             </div>
-            <div>
+          </div>
+        </div>
+        {/* Major University */}
+        <div className="countriesContainer my-5">
+          <div className="titleBar d-flex">
+            <div className="shape"></div>
+            <h2 className="fs-4 ms-4">Major University</h2>
+            <a href="/" className="ms-auto py-2 px-3 shadow titleTag">
+              View all 1900+ University
+            </a>
+          </div>
+          <div className="universityList d-flex justify-content-between gap-4">
+            <div
+              className=" universitycard shadow p-3 rounded"
+              style={{ width: '20rem' }}
+            >
               <img
-                src="https://cdn.britannica.com/82/2982-050-4A783E03/flag-prototype-Netherlands-countries-European-flags.jpg"
-                alt=""
-                width="200"
-                className="rounded"
+                src={university1}
+                alt="university1"
+                style={{ width: '100%' }}
+                className="rounded mb-3"
               />
-              <p>Name</p>
+              <p className="unviversitytitile">In USA</p>
+              <p className="universityfname">
+                Massachusetts Institute of Technology (MIT)
+              </p>
             </div>
-            <div>
+          </div>
+        </div>
+        {/* aboutus */}
+        <div className="aboutusContainer shadow">
+          <div className="titleBar d-flex py-4 m-0">
+            <div className="shape"></div>
+            <h2 className="fs-4 ms-4">About Us</h2>
+          </div>
+          <p className="aboutustext px-5 pb-5">
+            We aim for the upliftment of a community with better opportunities.
+            Studying abroad might be a distant dream for you because of the huge
+            amount you have to pay as a commission for middlemen and other
+            financial requirements. We are here to take you to the heights you
+            deserve with no monetary constraints. If you've been thinking about
+            studying abroad options, let’s work together to find a suitable
+            course, country and university for you.
+          </p>
+        </div>
+        {/* Most popular University */}
+        <div className="countriesContainer my-5">
+          <div className="titleBar d-flex">
+            <div className="shape"></div>
+            <h2 className="fs-4 ms-4">Major University</h2>
+            <a href="/" className="ms-auto py-2 px-3 shadow titleTag">
+              View all 1900+ University
+            </a>
+          </div>
+          <div className="universityList d-flex justify-content-between gap-4">
+            <div
+              className=" universitycard shadow p-3 rounded"
+              style={{ width: '20rem' }}
+            >
               <img
-                src="https://cdn.britannica.com/82/2982-050-4A783E03/flag-prototype-Netherlands-countries-European-flags.jpg"
-                alt=""
-                width="200"
-                className="rounded"
+                src={university1}
+                alt="university1"
+                style={{ width: '100%' }}
+                className="rounded mb-3"
               />
-              <p>Name</p>
-            </div>
-            <div>
-              <img
-                src="https://cdn.britannica.com/82/2982-050-4A783E03/flag-prototype-Netherlands-countries-European-flags.jpg"
-                alt=""
-                width="200"
-                className="rounded"
-              />
-              <p>Name</p>
+              <p className="unviversitytitile">In USA</p>
+              <p className="universityfname">
+                Massachusetts Institute of Technology (MIT)
+              </p>
             </div>
           </div>
         </div>
