@@ -1,4 +1,5 @@
 import React from "react";
+
 import germany from "../../assets/flags/germany.png";
 import hungary from "../../assets/flags/hungary.png";
 import france from "../../assets/flags/france.png";
@@ -7,9 +8,6 @@ import malta from "../../assets/flags/malta.png";
 import uk from "../../assets/flags/uk.png";
 import ireland from "../../assets/flags/ireland.png";
 import lithuania from "../../assets/flags/lithuania.png";
-import NavbarComponent from "../../Components/NavbarComponent";
-import FooterComponent from "../../Components/FooterComponent";
-import { Link } from "react-router-dom";
 
 function Countries() {
    return (
