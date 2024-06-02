@@ -7,10 +7,10 @@ import find2 from "../../assets/find2.png";
 import passport2 from "../../assets/passport2.png";
 import diploma2 from "../../assets/diploma2.png";
 import university1 from "../../assets/university1.png";
-import germany from "../../assets/flags/germany.png"
-import france from "../../assets/flags/france.png"
-import uk from "../../assets/flags/uk.png"
-import hungary from "../../assets/flags/hungary.png"
+import germany from "../../assets/flags/germany.png";
+import france from "../../assets/flags/france.png";
+import uk from "../../assets/flags/uk.png";
+import hungary from "../../assets/flags/hungary.png";
 
 import "./Home.css";
 
@@ -163,12 +163,7 @@ function Home() {
                      <p>France</p>
                   </div>
                   <div>
-                     <img
-                        src={uk}
-                        alt="uk"
-                        width="250"
-                        className="rounded"
-                     />
+                     <img src={uk} alt="uk" width="250" className="rounded" />
                      <p>UK</p>
                   </div>
                </div>
@@ -178,9 +173,9 @@ function Home() {
                <div className="titleBar d-flex">
                   <div className="shape"></div>
                   <h2 className="fs-4 ms-4">Major University</h2>
-                  <a href="/" className="ms-auto py-2 px-3 shadow titleTag">
+                  <Link to="/universities" className="ms-auto py-2 px-3 shadow titleTag">
                      View all 1900+ University
-                  </a>
+                  </Link>
                </div>
                <div className="universityList d-flex justify-content-between gap-4">
                   <div
