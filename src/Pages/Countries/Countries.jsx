@@ -7,6 +7,9 @@ import malta from "../../assets/flags/malta.png";
 import uk from "../../assets/flags/uk.png";
 import ireland from "../../assets/flags/ireland.png";
 import lithuania from "../../assets/flags/lithuania.png";
+import NavbarComponent from "../../Components/NavbarComponent";
+import FooterComponent from "../../Components/FooterComponent";
+import { Link } from "react-router-dom";
 
 function Countries() {
    return (
