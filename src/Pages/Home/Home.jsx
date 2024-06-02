@@ -1,10 +1,10 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import illustration from '../assets/Illustration.png';
-import find2 from '../assets/find2.png';
-import passport2 from '../assets/passport2.png';
-import diploma2 from '../assets/diploma2.png';
-import university1 from '../assets/university1.png';
+import illustration from '../../assets/Illustration.png';
+import find2 from '../../assets/find2.png';
+import passport2 from '../../assets/passport2.png';
+import diploma2 from '../../assets/diploma2.png';
+import university1 from '../../assets/university1.png';
 import './Home.css';
 
 function Home() {
@@ -85,7 +85,7 @@ function Home() {
               allowfullscreen
             ></iframe>
           </div>
-          <div className="col-6 gap-2 py-4 px-5 shadow rounded card1">
+          <div className="col-6 gap-2 py-4 px-5 shadow rounded shapeParent">
             <div className="d-flex">
               <div className="shape"></div>
               <h5 className="fs-4">How it works</h5>
