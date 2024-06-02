@@ -21,7 +21,7 @@ function Countries() {
                   <div>
                      <img
                         src={germany}
-                        height={120}
+                        height={180}
                         alt="Country pic"
                         className="rounded border"
                      />
@@ -32,7 +32,7 @@ function Countries() {
                   <div>
                      <img
                         src={hungary}
-                        height={120}
+                        height={180}
                         alt="Country pic"
                         className="rounded border"
                      />
@@ -43,7 +43,7 @@ function Countries() {
                   <div>
                      <img
                         src={france}
-                        height={120}
+                        height={180}
                         alt="Country pic"
                         className="rounded border"
                      />
@@ -54,7 +54,7 @@ function Countries() {
                   <div>
                      <img
                         src={latvia}
-                        height={120}
+                        height={180}
                         alt="Country pic"
                         className="rounded border"
                      />
@@ -65,7 +65,7 @@ function Countries() {
                   <div>
                      <img
                         src={lithuania}
-                        height={120}
+                        height={180}
                         alt="Country pic"
                         className="rounded border"
                      />
@@ -76,7 +76,7 @@ function Countries() {
                   <div>
                      <img
                         src={malta}
-                        height={120}
+                        height={180}
                         alt="Country pic"
                         className="rounded border"
                      />
@@ -87,7 +87,7 @@ function Countries() {
                   <div>
                      <img
                         src={uk}
-                        height={120}
+                        height={180}
                         alt="Country pic"
                         className="rounded border"
                      />
@@ -98,7 +98,7 @@ function Countries() {
                   <div>
                      <img
                         src={ireland}
-                        height={120}
+                        height={180}
                         alt="Country pic"
                         className="rounded border"
                      />

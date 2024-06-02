@@ -6,6 +6,7 @@ import passport2 from '../../assets/passport2.png';
 import diploma2 from '../../assets/diploma2.png';
 import university1 from '../../assets/university1.png';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -109,9 +110,9 @@ function Home() {
           <div className="titleBar d-flex">
             <div className="shape"></div>
             <h2 className="fs-4 ms-4">Major Countries</h2>
-            <a href="/" className="ms-auto py-2 px-3 shadow titleTag">
+            <Link to="/countries" className="ms-auto py-2 px-3 shadow titleTag">
               View all 50+ countries
-            </a>
+            </Link>
           </div>
           <div className="countriesList d-flex text-center justify-content-between">
             <div>
