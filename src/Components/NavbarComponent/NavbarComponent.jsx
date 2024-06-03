@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/Logo.svg";
 import Search from "../../assets/icons/Search.svg";
 
 import style from "./NavbarComponent.module.css";
