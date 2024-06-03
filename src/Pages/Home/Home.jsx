@@ -6,11 +6,14 @@ import illustration from "../../assets/Illustration.png";
 import find2 from "../../assets/find2.png";
 import passport2 from "../../assets/passport2.png";
 import diploma2 from "../../assets/diploma2.png";
-import university1 from "../../assets/university1.png";
 import germany from "../../assets/flags/germany.png";
 import france from "../../assets/flags/france.png";
 import uk from "../../assets/flags/uk.png";
 import hungary from "../../assets/flags/hungary.png";
+import university1 from "../../assets/university1.svg";
+import university2 from "../../assets/university2.svg";
+import university3 from "../../assets/university3.svg";
+import university4 from "../../assets/university4.svg";
 
 import styles from "./Home.module.css";
 
@@ -89,9 +92,10 @@ function Home() {
             <div className="row mb-5">
                <div className="col-lg-6">
                   <iframe
-                     className="rounded"
                      width="100%"
-                     src="https://www.youtube.com/embed/QfBasFOvhyI?si=K2p-xNIyHlceG6e3"
+                     height="315"
+                     className="rounded"
+                     src="https://www.youtube.com/embed/QfBasFOvhyI?si=VPPZBM6Pph3J-WQ6"
                      title="YouTube video player"
                      frameborder="0"
                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -99,7 +103,10 @@ function Home() {
                      allowfullscreen
                   ></iframe>
                </div>
-               <div className="col-lg-6 py-4 px-5 shadow rounded shapeParent">
+               <div
+                  className="col-lg-6 py-4 px-5 shadow rounded shapeParent"
+                  style={{ height: "315px" }}
+               >
                   <div className="d-flex">
                      <div className="shape"></div>
                      <h5 className="fs-4">How it works</h5>
@@ -168,7 +175,9 @@ function Home() {
                   </div>
                </div>
             </div>
+
             {/* Major University */}
+
             <div className="universityContainer my-5">
                <div className={`${styles.titleBar} d-flex shapeParent`}>
                   <div className="shape"></div>
@@ -182,7 +191,7 @@ function Home() {
                </div>
                <div className="universityList d-lg-flex flex-wrap gap-5">
                   <div
-                     className="universityCard shadow p-3 rounded"
+                     className="universityCard shadow p-3 rounded m-auto mb-3"
                      style={{ width: "18rem" }}
                   >
                      <img
@@ -197,11 +206,11 @@ function Home() {
                      </p>
                   </div>
                   <div
-                     className=" universityCard shadow p-3 rounded"
+                     className=" universityCard shadow p-3 rounded m-auto mb-3"
                      style={{ width: "18rem" }}
                   >
                      <img
-                        src={university1}
+                        src={university2}
                         alt="university1"
                         style={{ width: "100%" }}
                         className="rounded mb-3"
@@ -212,11 +221,11 @@ function Home() {
                      </p>
                   </div>
                   <div
-                     className=" universityCard shadow p-3 rounded"
+                     className=" universityCard shadow p-3 rounded m-auto mb-3"
                      style={{ width: "18rem" }}
                   >
                      <img
-                        src={university1}
+                        src={university3}
                         alt="university1"
                         style={{ width: "100%" }}
                         className="rounded mb-3"
@@ -227,11 +236,11 @@ function Home() {
                      </p>
                   </div>
                   <div
-                     className=" universityCard shadow p-3 rounded"
+                     className=" universityCard shadow p-3 rounded m-auto mb-3"
                      style={{ width: "18rem" }}
                   >
                      <img
-                        src={university1}
+                        src={university4}
                         alt="university1"
                         style={{ width: "100%" }}
                         className="rounded mb-3"
@@ -243,7 +252,9 @@ function Home() {
                   </div>
                </div>
             </div>
+
             {/* aboutus */}
+
             <div className="aboutusContainer shadow">
                <div
                   className={`${styles.titleBar} d-flex py-4 m-0 shapeParent`}
@@ -262,11 +273,13 @@ function Home() {
                   country and university for you.
                </p>
             </div>
+
             {/* Most popular University */}
+
             <div className="universityContainer my-5">
                <div className={`${styles.titleBar} d-flex shapeParent`}>
                   <div className="shape"></div>
-                  <h2 className="fs-4 ms-4">Most Popular University</h2>
+                  <h2 className="fs-4 ms-4">Popular Universities</h2>
                   <Link
                      to="/universities"
                      className={`${styles.titleTag} ms-auto py-2 px-3 shadow`}
@@ -274,13 +287,58 @@ function Home() {
                      View all 1900+ University
                   </Link>
                </div>
-               <div className="universityList d-lg-flex justify-content-between gap-4">
+               <div className="universityList d-lg-flex justify-content-between gap-5">
                   <div
-                     className=" universityCard shadow p-3 rounded"
+                     className="universityCard shadow p-3 rounded m-auto mb-3"
                      style={{ width: "18rem" }}
                   >
                      <img
                         src={university1}
+                        alt="university1"
+                        style={{ width: "100%" }}
+                        className="rounded mb-3"
+                     />
+                     <p className={styles.universityTitle}>In USA</p>
+                     <p className={styles.universityFname}>
+                        Massachusetts Institute of Technology (MIT)
+                     </p>
+                  </div>
+                  <div
+                     className="universityCard shadow p-3 rounded m-auto mb-3"
+                     style={{ width: "18rem" }}
+                  >
+                     <img
+                        src={university2}
+                        alt="university1"
+                        style={{ width: "100%" }}
+                        className="rounded mb-3"
+                     />
+                     <p className={styles.universityTitle}>In USA</p>
+                     <p className={styles.universityFname}>
+                        Massachusetts Institute of Technology (MIT)
+                     </p>
+                  </div>
+                  <div
+                     className="universityCard shadow p-3 rounded m-auto mb-3"
+                     style={{ width: "18rem" }}
+                  >
+                     <img
+                        src={university3}
+                        alt="university1"
+                        style={{ width: "100%" }}
+                        className="rounded mb-3"
+                     />
+                     <p className={styles.universityTitle}>In USA</p>
+                     <p className={styles.universityFname}>
+                        Massachusetts Institute of Technology (MIT)
+                     </p>
+                  </div>
+                  <div
+                     className="universityCard shadow p-3 rounded m-auto mb-3"
+                     style={{ width: "18rem" }}
+                  >
+                     <img
+                        src={university4}
                         alt="university1"
                         style={{ width: "100%" }}
                         className="rounded mb-3"
