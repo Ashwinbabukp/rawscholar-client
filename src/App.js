@@ -6,8 +6,8 @@ import Home from "./Pages/Home/Home";
 import Countries from "./Pages/Countries";
 import Universities from "./Pages/Universities";
 import University from "./Pages/University";
-import PageNotFound from "./Pages/PageNotFound";
 import FooterComponent from "./Components/FooterComponent/FooterComponent";
+import PageNotFound from "./Pages/PageNotFound";
 
 import "./App.css";
 
