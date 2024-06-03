@@ -10,10 +10,10 @@ import germany from "../../assets/flags/germany.png";
 import france from "../../assets/flags/france.png";
 import uk from "../../assets/flags/uk.png";
 import hungary from "../../assets/flags/hungary.png";
-import university1 from "../../assets/university1.svg";
-import university2 from "../../assets/university2.svg";
-import university3 from "../../assets/university3.svg";
-import university4 from "../../assets/university4.svg";
+import university1 from "../../assets/universities/university1.svg";
+import university2 from "../../assets/universities/university2.svg";
+import university3 from "../../assets/universities/university3.svg";
+import university4 from "../../assets/universities/university4.svg";
 
 import styles from "./Home.module.css";
 

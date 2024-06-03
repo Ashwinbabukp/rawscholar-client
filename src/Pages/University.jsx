@@ -1,6 +1,6 @@
 import React from "react";
 
-import university1 from "../assets/university1.svg";
+import university1 from "../assets/universities/university1.svg";
 
 function University() {
    return (
