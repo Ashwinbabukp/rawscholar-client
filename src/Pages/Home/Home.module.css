@@ -1,19 +1,16 @@
 .hero {
    background: linear-gradient(182.83deg, #eeaf48 -29%, #ee7d48 143.65%);
 }
-.cardtext {
+
+.cardText {
    font-size: 13px;
 }
-.cardheading {
+
+.cardHeading {
    font-size: 22px;
 }
 
-.shapeParent {
-   position: relative;
-}
-
 .titleBar {
-   position: relative;
    margin-block: 80px;
 }
 
@@ -24,22 +21,16 @@
    border-radius: 25px;
 }
 
-.shape {
-   position: absolute;
-   left: 0;
-   background-color: #067bc2;
-   height: 30px;
-   width: 8px;
-   border-radius: 2px;
-}
-.unviversitytitile {
+
+.universityTitle {
    font-style: normal;
    font-weight: 700;
    font-size: 18px;
    line-height: 22px;
    color: #067bc2;
 }
-.universityfname {
+
+.universityFname {
    font-style: normal;
    font-weight: 400;
    font-size: 17px;

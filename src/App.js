@@ -1,13 +1,15 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+
 import NavbarComponent from "./Components/NavbarComponent";
-import FooterComponent from "./Components/FooterComponent";
-import "./App.css";
 import Home from "./Pages/Home/Home";
 import Countries from "./Pages/Countries";
-import { Route, Routes } from "react-router-dom";
-import PageNotFound from "./Pages/PageNotFound";
 import Universities from "./Pages/Universities";
 import University from "./Pages/University";
+import PageNotFound from "./Pages/PageNotFound";
+import FooterComponent from "./Components/FooterComponent";
+
+import "./App.css";
 
 function App() {
    return (

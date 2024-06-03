@@ -6,7 +6,7 @@ function University() {
    return (
       <section id="universitySection" className="container">
          <div className="universityContainer my-5">
-            <div className="d-flex justify-content-between align-items-center rounded shadow p-5 my-5">
+            <div className="d-lg-flex justify-content-between align-items-center rounded shadow p-5 my-5">
                <div className="universityContent">
                   <h4 style={{ color: "#067BC2" }}>In Canada</h4>
                   <h3>Massachusetts Institute of Technology (MIT)</h3>
@@ -17,9 +17,38 @@ function University() {
                </div>
                <img src={university1} alt="university" height={100} />
             </div>
-            <div className="courseContainer d-flex justify-content-between flex-wrap py-5">
-               <div className="courseCard rounded shadow p-5">
-                  <div className="courseTitle mb-4 fw-bold" >
+            <div className="courseTags d-flex flex-wrap gap-3">
+               <div className="tags rounded-pill shadow-sm px-3 pt-3">
+                  <p>All Courses</p>
+               </div>
+               <div className="tags rounded-pill shadow-sm px-3 pt-3">
+                  <p>Masters Courses</p>
+               </div>
+               <div className="tags rounded-pill shadow-sm px-3 pt-3">
+                  <p>Bachelors Courses</p>
+               </div>
+               <div className="tags rounded-pill shadow-sm px-3 pt-3">
+                  <p>PhD Courses</p>
+               </div>
+               <div className="tags rounded-pill shadow-sm px-3 pt-3">
+                  <p>Engineering Courses</p>
+               </div>
+               <div className="tags rounded-pill shadow-sm px-3 pt-3">
+                  <p>Business Courses</p>
+               </div>
+               <div className="tags rounded-pill shadow-sm px-3 pt-3">
+                  <p>Science Courses</p>
+               </div>
+               <div className="tags rounded-pill shadow-sm px-3 pt-3">
+                  <p>Humanities Courses</p>
+               </div>
+               <div className="tags rounded-pill shadow-sm px-3 pt-3">
+                  <p>Btech</p>
+               </div>
+            </div>
+            <div className="courseContainer d-flex justify-content-between gap-5 flex-wrap py-5 px-2">
+               <div className="courseCard rounded shadow p-5 col-lg-5">
+                  <div className="courseTitle mb-4 fw-bold">
                      <h5 className="fw-bold">Bachelor of Science in Physics</h5>
                   </div>
                   <div className="courseContent row">
@@ -37,11 +66,6 @@ function University() {
                         <span style={{ color: "#067BC2" }}>Level</span>
                         <p style={{ color: "gray" }}>Bachelor</p>
                      </div>
-                  </div>
-               </div>
-               <div className="courseCard rounded shadow p-5">
-                  <div className="courseTitle">
-                     <h5>Bachelor of Science in Physics</h5>
                   </div>
                </div>
             </div>

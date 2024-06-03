@@ -1,6 +1,7 @@
 import React from "react";
 
 import notfound from "../assets/notfound.png";
+import { Link } from "react-router-dom";
 
 function PageNotFound() {
    return (
@@ -17,9 +18,9 @@ function PageNotFound() {
                404
             </h1>
             <p>Page Not Found</p>
-            <button className="btn btn-outline-info rounded-pill">
-               Go Back
-            </button>
+            <Link to="/" className="btn btn-outline-info rounded-pill">
+               Go Back Home
+            </Link>
          </div>
       </section>
    );

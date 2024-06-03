@@ -12,12 +12,12 @@ import france from "../../assets/flags/france.png";
 import uk from "../../assets/flags/uk.png";
 import hungary from "../../assets/flags/hungary.png";
 
-import "./Home.css";
+import styles from "./Home.module.css";
 
 function Home() {
    return (
       <>
-         <section className="hero">
+         <section className={styles.hero}>
             <Carousel>
                <Carousel.Item>
                   <img src={illustration} alt="img" />
@@ -55,8 +55,8 @@ function Home() {
                <div className="d-flex align-items-center gap-2 px-3 shadow rounded ">
                   <img src={find2} height="60" alt="card 1" />
                   <div>
-                     <h5 className="cardheading">Courses for you</h5>
-                     <p className="cardtext">
+                     <h5 className={styles.cardHeading}>Courses for you</h5>
+                     <p className={styles.cardText}>
                         We will take you to the courses that are perfect for
                         you. All you have to do is send your applications and
                         look up to your dream course.
@@ -64,10 +64,10 @@ function Home() {
                   </div>
                </div>
                <div className="d-flex align-items-center gap-2 p-3 shadow rounded">
-                  <img src={passport2} height="60" alt="card 1" />
+                  <img src={passport2} height="60" alt="card 2" />
                   <div>
-                     <h5 className="cardheading">Get your visa</h5>
-                     <p className="cardtext">
+                     <h5 className={styles.cardHeading}>Get your visa</h5>
+                     <p className={styles.cardText}>
                         The procedures of visas might be tiring. We will be
                         there to assist you from arranging a mockup interview to
                         getting an actual one and more.
@@ -75,10 +75,10 @@ function Home() {
                   </div>
                </div>
                <div className="d-flex align-items-center gap-2 px-3 shadow rounded ">
-                  <img src={diploma2} height="60" alt="card 1" />
+                  <img src={diploma2} height="60" alt="card 3" />
                   <div>
-                     <h5 className="cardheading">Scholarships</h5>
-                     <p className="cardtext">
+                     <h5 className={styles.cardHeading}>Scholarships</h5>
+                     <p className={styles.cardText} x>
                         Get the right scholarship you deserve. We will take you
                         to the immense opportunities of scholarship for a
                         brighter future.
@@ -124,12 +124,12 @@ function Home() {
          </section>
          <section className="services container">
             <div className="countriesContainer ">
-               <div className="titleBar d-flex">
+               <div className={`${styles.titleBar} d-flex shapeParent`}>
                   <div className="shape"></div>
                   <h2 className="fs-4 ms-4">Major Countries</h2>
                   <Link
                      to="/countries"
-                     className="ms-auto py-2 px-3 shadow titleTag"
+                     className={`${styles.titleTag} ms-auto py-2 px-3 shadow`}
                   >
                      View all countries →
                   </Link>
@@ -169,17 +169,20 @@ function Home() {
                </div>
             </div>
             {/* Major University */}
-            <div className="countriesContainer my-5">
-               <div className="titleBar d-flex">
+            <div className="universityContainer my-5">
+               <div className={`${styles.titleBar} d-flex shapeParent`}>
                   <div className="shape"></div>
                   <h2 className="fs-4 ms-4">Major University</h2>
-                  <Link to="/universities" className="ms-auto py-2 px-3 shadow titleTag">
+                  <Link
+                     to="/universities"
+                     className={`${styles.titleTag} ms-auto py-2 px-3 shadow`}
+                  >
                      View all 1900+ University
                   </Link>
                </div>
                <div className="universityList d-flex justify-content-between gap-4">
                   <div
-                     className=" universitycard shadow p-3 rounded"
+                     className=" universityCard shadow p-3 rounded"
                      style={{ width: "20rem" }}
                   >
                      <img
@@ -188,8 +191,8 @@ function Home() {
                         style={{ width: "100%" }}
                         className="rounded mb-3"
                      />
-                     <p className="unviversitytitile">In USA</p>
-                     <p className="universityfname">
+                     <p className={styles.universityTitle}>In USA</p>
+                     <p className={styles.universityFname}>
                         Massachusetts Institute of Technology (MIT)
                      </p>
                   </div>
@@ -197,11 +200,13 @@ function Home() {
             </div>
             {/* aboutus */}
             <div className="aboutusContainer shadow">
-               <div className="titleBar d-flex py-4 m-0">
+               <div
+                  className={`${styles.titleBar} d-flex py-4 m-0 shapeParent`}
+               >
                   <div className="shape"></div>
                   <h2 className="fs-4 ms-4">About Us</h2>
                </div>
-               <p className="aboutustext px-5 pb-5">
+               <p className="aboutusText px-5 pb-5">
                   We aim for the upliftment of a community with better
                   opportunities. Studying abroad might be a distant dream for
                   you because of the huge amount you have to pay as a commission
@@ -214,16 +219,19 @@ function Home() {
             </div>
             {/* Most popular University */}
             <div className="universityContainer my-5">
-               <div className="titleBar d-flex">
+               <div className={`${styles.titleBar} d-flex shapeParent`}>
                   <div className="shape"></div>
-                  <h2 className="fs-4 ms-4">Major University</h2>
-                  <a href="/" className="ms-auto py-2 px-3 shadow titleTag">
+                  <h2 className="fs-4 ms-4">Most Popular University</h2>
+                  <Link
+                     to="/universities"
+                     className={`${styles.titleTag} ms-auto py-2 px-3 shadow`}
+                  >
                      View all 1900+ University
-                  </a>
+                  </Link>
                </div>
                <div className="universityList d-flex justify-content-between gap-4">
                   <div
-                     className=" universitycard shadow p-3 rounded"
+                     className=" universityCard shadow p-3 rounded"
                      style={{ width: "20rem" }}
                   >
                      <img
@@ -232,8 +240,8 @@ function Home() {
                         style={{ width: "100%" }}
                         className="rounded mb-3"
                      />
-                     <p className="unviversitytitile">In USA</p>
-                     <p className="universityfname">
+                     <p className={styles.universityTitle}>In USA</p>
+                     <p className={styles.universityFname}>
                         Massachusetts Institute of Technology (MIT)
                      </p>
                   </div>
