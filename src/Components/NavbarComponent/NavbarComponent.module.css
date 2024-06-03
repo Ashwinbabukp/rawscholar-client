@@ -1,4 +1,4 @@
-.searchbox {
+.searchBox {
   width: 500px;
   padding: 5px 15px;
   border: 1px solid #067bc2;
@@ -10,7 +10,6 @@
   background-color: #067bc2;
   border: none;
   border-radius: 4px;
-
 }
 
 .button {

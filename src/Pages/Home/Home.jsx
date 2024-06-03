@@ -51,8 +51,8 @@ function Home() {
             </Carousel>
          </section>
          <section className="working container">
-            <div className="cardContainer my-5 py-5 gap-5 d-flex justify-content-evenly">
-               <div className="d-flex align-items-center gap-2 px-3 shadow rounded ">
+            <div className="cardContainer my-5 py-5 gap-5 d-lg-flex row-gap-3">
+               <div className="d-flex align-items-center gap-4 p-3 shadow rounded mb-4">
                   <img src={find2} height="60" alt="card 1" />
                   <div>
                      <h5 className={styles.cardHeading}>Courses for you</h5>
@@ -63,7 +63,7 @@ function Home() {
                      </p>
                   </div>
                </div>
-               <div className="d-flex align-items-center gap-2 p-3 shadow rounded">
+               <div className="d-flex align-items-center gap-4 p-3 shadow rounded mb-4">
                   <img src={passport2} height="60" alt="card 2" />
                   <div>
                      <h5 className={styles.cardHeading}>Get your visa</h5>
@@ -74,7 +74,7 @@ function Home() {
                      </p>
                   </div>
                </div>
-               <div className="d-flex align-items-center gap-2 px-3 shadow rounded ">
+               <div className="d-flex align-items-center gap-4 p-3 shadow rounded mb-4">
                   <img src={diploma2} height="60" alt="card 3" />
                   <div>
                      <h5 className={styles.cardHeading}>Scholarships</h5>
@@ -87,7 +87,7 @@ function Home() {
                </div>
             </div>
             <div className="row mb-5">
-               <div className="col-6">
+               <div className="col-lg-6">
                   <iframe
                      className="rounded"
                      width="100%"
@@ -99,7 +99,7 @@ function Home() {
                      allowfullscreen
                   ></iframe>
                </div>
-               <div className="col-6 gap-2 py-4 px-5 shadow rounded shapeParent">
+               <div className="col-lg-6 py-4 px-5 shadow rounded shapeParent">
                   <div className="d-flex">
                      <div className="shape"></div>
                      <h5 className="fs-4">How it works</h5>
@@ -134,7 +134,7 @@ function Home() {
                      View all countries →
                   </Link>
                </div>
-               <div className="countriesList d-flex text-center justify-content-between">
+               <div className="countriesList d-lg-flex flex-wrap text-center justify-content-between">
                   <div>
                      <img
                         src={germany}
@@ -180,10 +180,55 @@ function Home() {
                      View all 1900+ University
                   </Link>
                </div>
-               <div className="universityList d-flex justify-content-between gap-4">
+               <div className="universityList d-lg-flex flex-wrap gap-5">
+                  <div
+                     className="universityCard shadow p-3 rounded"
+                     style={{ width: "18rem" }}
+                  >
+                     <img
+                        src={university1}
+                        alt="university1"
+                        style={{ width: "100%" }}
+                        className="rounded mb-3"
+                     />
+                     <p className={styles.universityTitle}>In USA</p>
+                     <p className={styles.universityFname}>
+                        Massachusetts Institute of Technology (MIT)
+                     </p>
+                  </div>
                   <div
                      className=" universityCard shadow p-3 rounded"
-                     style={{ width: "20rem" }}
+                     style={{ width: "18rem" }}
+                  >
+                     <img
+                        src={university1}
+                        alt="university1"
+                        style={{ width: "100%" }}
+                        className="rounded mb-3"
+                     />
+                     <p className={styles.universityTitle}>In USA</p>
+                     <p className={styles.universityFname}>
+                        Massachusetts Institute of Technology (MIT)
+                     </p>
+                  </div>
+                  <div
+                     className=" universityCard shadow p-3 rounded"
+                     style={{ width: "18rem" }}
+                  >
+                     <img
+                        src={university1}
+                        alt="university1"
+                        style={{ width: "100%" }}
+                        className="rounded mb-3"
+                     />
+                     <p className={styles.universityTitle}>In USA</p>
+                     <p className={styles.universityFname}>
+                        Massachusetts Institute of Technology (MIT)
+                     </p>
+                  </div>
+                  <div
+                     className=" universityCard shadow p-3 rounded"
+                     style={{ width: "18rem" }}
                   >
                      <img
                         src={university1}
@@ -229,10 +274,10 @@ function Home() {
                      View all 1900+ University
                   </Link>
                </div>
-               <div className="universityList d-flex justify-content-between gap-4">
+               <div className="universityList d-lg-flex justify-content-between gap-4">
                   <div
                      className=" universityCard shadow p-3 rounded"
-                     style={{ width: "20rem" }}
+                     style={{ width: "18rem" }}
                   >
                      <img
                         src={university1}
