@@ -1,0 +1,15 @@
+.answerLine {
+   border: 1px solid green;
+}
+
+.faq {
+   box-shadow: 1px 3px 15px black;
+}
+
+.answer {
+   overflow: hidden;
+}
+
+.faq.active .answer {
+   max-height: 300;
+}

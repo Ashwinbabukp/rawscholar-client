@@ -1,42 +1,95 @@
-import React from "react";
+import React, { useState } from "react";
+
+import downArrow from "../../assets/icons/down arrow.svg";
+
+import "./Faq.css";
 
 function Faq() {
+   const [show, setShow] = useState(false);
+   const accordian = () => {
+      setShow(true);
+   };
+
    return (
-      <section id="faqSection">
-         <div className="faqTitle">
+      <section id="faqSection " className="my-5">
+         <div className="faqTitle text-center mb-5">
             <h2>Frequently Asked Questions</h2>
             <hr />
-            <div className="container">
-               <Accordion defaultActiveKey="0">
-                  <Accordion.Item eventKey="0">
-                     <Accordion.Header>Accordion Item #1</Accordion.Header>
-                     <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
-                     </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item eventKey="1">
-                     <Accordion.Header>Accordion Item #2</Accordion.Header>
-                     <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
-                     </Accordion.Body>
-                  </Accordion.Item>
-               </Accordion>
+         </div>
+         <div className="container d-flex flex-column align-items-center gap-4">
+            <div className="faq rounded shadow-sm p-3" onClick={accordian}>
+               <div className="question">
+                  <h5 className="d-flex justify-content-between">
+                     1. What is the apt time for submitting an application form
+                     to the Universities ?
+                     <img src={downArrow} alt="down arrow" />
+                  </h5>
+               </div>
+               {show && (
+                  <div className="answer">
+                     <hr className="answerLine" />
+                     <p className="px-5">
+                        Major institutions in a particular country may have one,
+                        two or three intakes during an academic year. So you
+                        should take steps at least one year in advance for the
+                        respective intake.
+                     </p>
+                  </div>
+               )}
+            </div>
+            <div className="faq rounded shadow-sm p-3">
+               <div className="question">
+                  <h5 className="d-flex justify-content-between">
+                     1. What is the apt time for submitting an application form
+                     to the Universities ?
+                     <img src={downArrow} alt="down arrow" />
+                  </h5>
+               </div>
+               <div className="answer">
+                  <hr className="answerLine" />
+                  <p className="px-5">
+                     Major institutions in a particular country may have one,
+                     two or three intakes during an academic year. So you should
+                     take steps at least one year in advance for the respective
+                     intake.
+                  </p>
+               </div>
+            </div>
+            <div className="faq rounded shadow-sm p-3">
+               <div className="question">
+                  <h5 className="d-flex justify-content-between">
+                     1. What is the apt time for submitting an application form
+                     to the Universities ?
+                     <img src={downArrow} alt="down arrow" />
+                  </h5>
+               </div>
+               <div className="answer">
+                  <hr className="answerLine" />
+                  <p className="px-5">
+                     Major institutions in a particular country may have one,
+                     two or three intakes during an academic year. So you should
+                     take steps at least one year in advance for the respective
+                     intake.
+                  </p>
+               </div>
+            </div>
+            <div className="faq rounded shadow-sm p-3">
+               <div className="question">
+                  <h5 className="d-flex justify-content-between">
+                     1. What is the apt time for submitting an application form
+                     to the Universities ?
+                     <img src={downArrow} alt="down arrow" />
+                  </h5>
+               </div>
+               <div className="answer">
+                  <hr className="answerLine" />
+                  <p className="px-5">
+                     Major institutions in a particular country may have one,
+                     two or three intakes during an academic year. So you should
+                     take steps at least one year in advance for the respective
+                     intake.
+                  </p>
+               </div>
             </div>
          </div>
       </section>
