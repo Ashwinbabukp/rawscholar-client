@@ -13,6 +13,7 @@ import "./App.css";
 import Login from "./Pages/Login/Login";
 import Faq from "./Pages/FAQ/Faq";
 import ScrollToTop from "./Components/ScrollToTop";
+import Signup from "./Pages/Signup/Signup";
 
 function App() {
    const [show, setShow] = useState(true);
@@ -26,6 +27,7 @@ function App() {
             <Route path="/universities" element={<Universities />} />
             <Route path="/university" element={<University />} />
             <Route path="/login" element={<Login show={setShow} />} />
+            <Route path="/signup" element={<Signup show={setShow} />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="*" element={<PageNotFound />} />
          </Routes>

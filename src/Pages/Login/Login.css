@@ -11,9 +11,16 @@
 }
 .inputBox{
   width: 300px;
+  height: 43px;
   padding: 5px 15px;
   border: 1px solid #067bc2;
   outline: none;
   border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.inputBox:hover{
+  border: 2px solid #067bc2;
 }
 
