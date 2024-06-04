@@ -10,7 +10,7 @@ import PageNotFound from './Pages/PageNotFound';
 import FooterComponent from './Components/FooterComponent/FooterComponent';
 
 import './App.css';
-import Login from './Pages/Login';
+import Login from './Pages/Login/Login';
 
 function App() {
   const [show, setShow] = useState(true);
