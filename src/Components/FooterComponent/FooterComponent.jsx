@@ -16,11 +16,11 @@ function FooterComponent() {
          className="footer"
          style={{ backgroundColor: "#067BC2", paddingBlock: "30px" }}
       >
-         <div className="container d-flex justify-content-between align-items-center">
-            <img height={100} src={logowhite} alt="" />
+         <div className="container d-flex flex-column flex-lg-row justify-content-between align-items-sm-center">
+            <img height={100} src={logowhite} alt=""  className="me-auto me-sm-0"/>
             <ul
                style={{ listStyle: "none", height: "100%" }}
-               className="d-flex flex-column gap-4"
+               className="d-flex flex-column gap-4 my-4"
             >
                <li>
                   <Link
@@ -58,12 +58,12 @@ function FooterComponent() {
                   </Link>
                </li>
             </ul>
-            <div className="socials text-light">
+            <div className="socials text-light ms-3">
                <Link className={style.socialIcon}>
                   <img src={mail} alt="mail" />
                   <span>rawscholar@gmail.com</span>
                </Link>
-               <div className="d-flex justify-content-between">
+               <div className="d-flex justify-content-sm-between">
                   <Link
                      to="https://www.facebook.com/rawscholarofficial"
                      target="blank"
@@ -95,7 +95,7 @@ function FooterComponent() {
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15718.366065807206!2d76.2863634!3d9.9679031!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80f6e2077d2c286d%3A0xcd50ca008f5bb0c4!2sRawscholar!5e0!3m2!1sen!2sin!4v1717440092189!5m2!1sen!2sin"
                   width="300"
                   height="200"
-                  className="rounded"
+                  className="rounded d-none d-sm-block"
                   title="location map"
                   style={{ border: "0" }}
                   allowfullscreen=""
