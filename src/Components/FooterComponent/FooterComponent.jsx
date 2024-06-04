@@ -24,7 +24,7 @@ function FooterComponent() {
             >
                <li>
                   <Link
-                     to="/"
+                     to="/faq"
                      style={{
                         textDecoration: "none",
                         color: "white",
