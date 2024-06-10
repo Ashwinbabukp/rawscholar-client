@@ -14,6 +14,7 @@ import Login from "./Pages/Login/Login";
 import Faq from "./Pages/FAQ/Faq";
 import ScrollToTop from "./Components/ScrollToTop";
 import Signup from "./Pages/Signup/Signup";
+import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
 
 function App() {
    const [show, setShow] = useState(true);
@@ -28,6 +29,7 @@ function App() {
             <Route path="/university" element={<University />} />
             <Route path="/login" element={<Login show={setShow} />} />
             <Route path="/signup" element={<Signup show={setShow} />} />
+            <Route path="/forgotpassword" element={<ForgotPassword show={setShow} />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="*" element={<PageNotFound />} />
          </Routes>
