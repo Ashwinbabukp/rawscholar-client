@@ -12,7 +12,7 @@ function Signup({show}) {
     <div className="containerlogin d-flex justify-content-center align-items-center">
       <img className='p-1  d-none d-sm-block' src={StudyIllustration} alt="" height="700"  />
       <form className="formContainer shadow d-flex flex-column align-items-center gap-3">
-        <img className='mb-2' src={Logo} alt="" width={180} />
+        <img className='mb-2' src={Logo} alt="" width={140} />
         <div className="form-group">
           <p className="m-0">Full Name<span style={{color:"#067BC2"}}>*</span></p>
           <input className="inputBox" type="text" placeholder="Enter Email" 
