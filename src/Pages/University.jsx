@@ -2,7 +2,8 @@ import React from "react";
 
 import university1 from "../assets/universities/university1.svg";
 
-function University() {
+function University({show}) {
+   show(true)
    return (
       <section id="universitySection" className="container">
          <div className="universityContainer my-5">

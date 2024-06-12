@@ -4,7 +4,8 @@ import downArrow from "../../assets/icons/down arrow.svg";
 
 import style from "./Faq.module.css";
 
-function Faq() {
+function Faq({ show }) {
+   show(true);
    const [selected, setSelected] = useState(null);
 
    const toggle = (i) => {

@@ -23,14 +23,14 @@ function App() {
          {show && <NavbarComponent />}
          <ScrollToTop />
          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/countries" element={<Countries />} />
-            <Route path="/universities" element={<Universities />} />
-            <Route path="/university" element={<University />} />
+            <Route path="/" element={<Home show={setShow} />} />
+            <Route path="/countries" element={<Countries show={setShow} />} />
+            <Route path="/universities" element={<Universities show={setShow} />} />
+            <Route path="/university" element={<University show={setShow} />} />
             <Route path="/login" element={<Login show={setShow} />} />
             <Route path="/signup" element={<Signup show={setShow} />} />
             <Route path="/forgotpassword" element={<ForgotPassword show={setShow} />} />
-            <Route path="/faq" element={<Faq />} />
+            <Route path="/faq" element={<Faq />} show={setShow} />
             <Route path="*" element={<PageNotFound />} />
          </Routes>
          {show && <FooterComponent />}

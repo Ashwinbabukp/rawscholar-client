@@ -8,6 +8,7 @@ import Logo from "../../assets/Logo.svg";
 import Search from "../../assets/icons/Search.svg";
 
 import style from "./NavbarComponent.module.css";
+import { Link } from "react-router-dom";
 
 function NavbarComponent() {
    return (
@@ -38,9 +39,11 @@ function NavbarComponent() {
                      <Nav.Link href="/services">Services</Nav.Link>
                      <Nav.Link href="/about">About</Nav.Link>
                      <Nav.Link href="/contact">Contact</Nav.Link>
-                     <Button className={style.button} type="submit">
-                        Sign Up
-                     </Button>
+                     <Link to="/signup">
+                        <Button className={style.button} type="submit">
+                           Sign Up
+                        </Button>
+                     </Link>
                   </div>
                </Nav>
             </Navbar.Collapse>
