@@ -17,7 +17,8 @@ import university4 from "../../assets/universities/university4.svg";
 
 import styles from "./Home.module.css";
 
-function Home() {
+function Home({ show }) {
+   show(true);
    return (
       <>
          <section className={styles.hero}>
