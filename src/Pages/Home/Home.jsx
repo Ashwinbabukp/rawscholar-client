@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Carousel from "react-bootstrap/Carousel";
 
-import illustration from "../../assets/Illustration.png";
+import heroImage from "../../assets/heroimg3.jpg";
 import find2 from "../../assets/find2.png";
 import passport2 from "../../assets/passport2.png";
 import diploma2 from "../../assets/diploma2.png";
@@ -21,38 +20,18 @@ function Home({ show }) {
    show(true);
    return (
       <>
-         <section className={styles.hero}>
-            <Carousel>
-               <Carousel.Item>
-                  <img src={illustration} alt="img" />
-                  <Carousel.Caption>
-                     <h3>First slide label</h3>
-                     <p>
-                        Nulla vitae elit libero, a pharetra augue mollis
-                        interdum.
-                     </p>
-                  </Carousel.Caption>
-               </Carousel.Item>
-               <Carousel.Item>
-                  <img src={illustration} alt="" />
-                  <Carousel.Caption>
-                     <h3>Second slide label</h3>
-                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     </p>
-                  </Carousel.Caption>
-               </Carousel.Item>
-               <Carousel.Item>
-                  <img src={illustration} alt="" />
-                  <Carousel.Caption>
-                     <h3>Third slide label</h3>
-                     <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl
-                        consectetur.
-                     </p>
-                  </Carousel.Caption>
-               </Carousel.Item>
-            </Carousel>
+         <section id="heroContainer">
+            <div className={styles.hero}>
+               <div className={styles.heroContent}>
+                  <div className={styles.heroText} style={{fontSize:"70px"}}>ignite</div>
+                  <div className={styles.heroText}>
+                     <span>your academic journey</span>
+                  </div>
+               </div>
+               <div className={styles.heroImageDiv}>
+                  <img src={heroImage} alt="Hero" />
+               </div>
+            </div>
          </section>
          <section className="working container">
             <div className="cardContainer my-5 py-5 gap-5 d-lg-flex row-gap-3">
