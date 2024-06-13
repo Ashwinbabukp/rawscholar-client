@@ -1,0 +1,18 @@
+.titleBar {
+    margin-block: 80px;
+ }
+ 
+ .titleTag {
+    color: #067bc2;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 25px;
+ }
+.contact-text{
+    border-radius: 10px;
+    background: linear-gradient(106deg, #DEEEF9 -0.55%, #A5D5F2 96.41%);
+}
+.connectList ul li {
+    list-style: none;
+}
+ 
