@@ -19,7 +19,7 @@ function Countries({ show }) {
                <div className="shape"></div>
                <h3 className="ms-4">Countries</h3>
             </div>
-            <div className="d-flex flex-wrap justify-content-between row-gap-3 my-5">
+            <div className="d-flex flex-wrap justify-content-center align-items-center column-gap-3 my-5">
                <Link to="/universities" style={{ textDecoration: "none" }}>
                   <div>
                      <img

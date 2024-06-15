@@ -19,7 +19,7 @@ function Universities({show}) {
                <div className="shape"></div>
                <h3 className="ms-4">Universities</h3>
             </div>
-            <div className="universityList d-flex justify-content-between flex-wrap gap-5">
+            <div className="universityList d-flex justify-content-center align-items-center gap-5 flex-wrap">
                <Link
                   to="/university"
                   style={{ textDecoration: "none", color: "black" }}
