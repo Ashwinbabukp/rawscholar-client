@@ -14,8 +14,8 @@ import { Link } from 'react-router-dom';
 
 function Contactus() {
   return (
-    <div className="container p-5">
-      <div className={'titleBar d-flex shapeParent'}>
+    <div className="container" style={{marginBlock:"70px"}}>
+      <div className='titleBar d-flex shapeParent mb-3'>
         <div className="shape"></div>
         <h2 className="fs-4 ms-4">Contact us </h2>
       </div>
@@ -95,12 +95,11 @@ function Contactus() {
               <p className="m-0"style={{ color: '#5D626E' }}>
                 Message <span style={{ color: '#067BC2' }}>*</span>{' '}
               </p>
-              <input
+              <textarea
                 className="inputBox"
-                type="text"
-                placeholder=""
+                name='message'
                 style={{ fontSize: '15px' }}
-              />
+              ></textarea>
             </div>
             <Button
               className="mt-2 mb-3 w-100"
